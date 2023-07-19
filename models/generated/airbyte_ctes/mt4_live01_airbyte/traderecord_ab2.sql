@@ -20,7 +20,7 @@ select
     cast(login as {{ dbt_utils.type_bigint() }}) as login,
     cast(mode as {{ dbt_utils.type_bigint() }}) as mode,
     cast(gw_close_price as {{ dbt_utils.type_bigint() }}) as gw_close_price,
-    cast(commission_agent as {{ dbt_utils.type_numeric() }}(28, 6)) as commission_agent,
+    cast(commission_agent as {{ dbt_utils.type_numeric() }}) as commission_agent,
     cast(close_price as {{ dbt_utils.type_float() }}) as close_price,
     cast(sl as {{ dbt_utils.default__type_numeric() }}) as sl,
     cast(commission as {{ dbt_utils.type_numeric() }}) as commission,
